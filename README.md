@@ -13,7 +13,8 @@
 <p align="center">
   <a href="https://openfang.sh/docs">Documentation</a> &bull;
   <a href="https://openfang.sh/docs/getting-started">Quick Start</a> &bull;
-  <a href="https://x.com/openfangg">Twitter / X</a>
+  <a href="https://x.com/openfangg">Twitter / X</a> &bull;
+  <a href="README_ARM64.md"><strong>ARM64 Guide</strong></a>
 </p>
 
 <p align="center">

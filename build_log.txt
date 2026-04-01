@@ -1,0 +1,25 @@
+   Compiling native-tls v0.2.18
+   Compiling openfang-runtime v0.5.5 (/home/ubuntu/openfang/crates/openfang-runtime)
+   Compiling crossbeam v0.8.4
+   Compiling json5 v0.4.1
+   Compiling chrono-tz v0.10.4
+   Compiling imap v2.4.1
+   Compiling openfang-channels v0.5.5 (/home/ubuntu/openfang/crates/openfang-channels)
+   Compiling openfang-extensions v0.5.5 (/home/ubuntu/openfang/crates/openfang-extensions)
+error[E0639]: cannot create non-exhaustive struct using struct expression
+   --> crates/openfang-runtime/src/mcp.rs:310:22
+    |
+310 |           let config = StreamableHttpClientTransportConfig {
+    |  ______________________^
+311 | |             uri: Arc::from(url),
+312 | |             custom_headers,
+313 | |             ..Default::default()
+314 | |         };
+    | |_________^
+
+   Compiling portable-atomic v1.13.1
+   Compiling openfang-wire v0.5.5 (/home/ubuntu/openfang/crates/openfang-wire)
+   Compiling openfang-hands v0.5.5 (/home/ubuntu/openfang/crates/openfang-hands)
+For more information about this error, try `rustc --explain E0639`.
+error: could not compile `openfang-runtime` (lib) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
