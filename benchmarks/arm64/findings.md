@@ -25,6 +25,7 @@ The goal was to maximize the 4 physical ARM cores.
 | **Balanced** | 2 | 2 | 4 | **Peak Efficiency** (1:1 Thread-to-Core) |
 | **Single Worker** | 4 | 1 | 4 | Baseline |
 | **Over-subscribed** | 4 | 2 | 8 | **1273.2s total** (-5% vs Single) |
+| **Distributed (Slow)** | 1 | 4 | 4 | ❌ **Estimated >1600s** (Sequential bottleneck) |
 
 ## 💡 Key Architectural Insights
 1. **Thread-to-Core Affinity**: ARM Neoverse-N1 cores perform best when not over-subscribed. A 1:1 mapping of threads to cores prevents context switching and L2/L3 cache thrashing.
